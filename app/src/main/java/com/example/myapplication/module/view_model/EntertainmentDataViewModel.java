@@ -9,10 +9,7 @@ import androidx.lifecycle.MutableLiveData;
 
 import com.example.myapplication.base.APIEndPoints;
 import com.example.myapplication.base.RestApiService;
-import com.example.myapplication.module.model.EntertainmentModel;
 import com.example.myapplication.module.model.EntertainmentzModel;
-
-import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.Callback;

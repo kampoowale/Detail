@@ -32,6 +32,7 @@ public class EntertainmentAdapter extends RecyclerView.Adapter<EntertainmentAdap
         TextView txtTitle;
         TextView category;
         TextView media;
+        TextView date;
 
 
         CustomViewHolder(View itemView) {
@@ -41,6 +42,7 @@ public class EntertainmentAdapter extends RecyclerView.Adapter<EntertainmentAdap
             txtTitle = (TextView) mView.findViewById(R.id.title);
             category = (TextView) mView.findViewById(R.id.category);
             media = (TextView) mView.findViewById(R.id.media);
+            date=(TextView)mView.findViewById(R.id.date);
         }
     }
 
@@ -62,6 +64,7 @@ public class EntertainmentAdapter extends RecyclerView.Adapter<EntertainmentAdap
         }
         try {
             holder.media.setText(dataList.get(position).getMedia());
+            holder.date.setText(dataList.get(position).getPubDate());
         }
         catch(Exception e){
 
